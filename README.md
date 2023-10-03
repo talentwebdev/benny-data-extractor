@@ -12,19 +12,21 @@ This project is small demo to extract data elements from unstructured data.
 
 ## Approach 
 
-Based on data inputs that are provided in the requirement, they seem to be complex and random 
-text which doesn't have any rules to extract elements that we're looking for. 
+The provided data inputs appear to be complex, consisting of intricate and seemingly random text. 
+This lack of consistent patterns makes it challenging to extract the desired elements.
 
-The initial idea was to use RegEX to extract the elements but that requires to specify different 
-patterns for each input. This sounds like not a best practice and not scalable in the future. 
+Initially, I considered using RegEX (Regular Expressions) for extraction. However, 
+this would necessitate the creation of unique patterns for each input, which
+may not be scalable or efficient in the long run. 
 
-To make it dynamic and scalable, I decided to integrate NLP library called `spaCy`. [Here's](https://spacy.io/) 
-their official website. It's an open source. 
+To foster scalability and flexibility, I chose to integrate the NLP library, spaCy. 
+You can find more about it on [their official website](https://spacy.io/). It's worth noting that spaCy is open-source.
 
-Knowing that I'm not a expert for ML and NLP, I'm not able to integrate it 100% correctly but, 
-the approach that I took is to split the text by entities and check it's label if it's a date, money, or
-percentage. Based on that, we're checking leading verbs, pronouns, and adjectives to detect if it's end or start date, 
-min or maximum value. 
+While I don't profess to be an expert in ML (Machine Learning) or NLP (Natural Language Processing), 
+the approach I've adopted involves segmenting the text by entities. I then evaluate 
+these entities based on their labels—namely date, money, or percentage. 
+To further classify these as start or end dates, or minimum or maximum values, 
+I examine preceding verbs, pronouns, and adjectives.
 
 ## How to Install and Run application? 
 
