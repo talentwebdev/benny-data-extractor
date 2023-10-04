@@ -69,3 +69,5 @@ and contract cheating module. We used `spacy` there to determine authorship of d
 and detect contract cheating. 
 
 I'd like to elaborate about that in interview. 
+
+**Elapsed Time**: 4 hours
